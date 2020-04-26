@@ -1,0 +1,2 @@
+rootProject.name='MSO_Laboratorium_Zdalne'
+include ':app'

@@ -18,4 +18,9 @@ public class MainActivity extends AppCompatActivity {
         Intent drawingActivityIntent = new Intent(getApplicationContext(),DrawingActivity.class);
         startActivity(drawingActivityIntent);
     }
+
+    public void dbOnClick(View view){
+        Intent dBActivityIntent = new Intent(getApplicationContext(),DBActivity.class);
+        startActivity(dBActivityIntent);
+    }
 }

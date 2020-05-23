@@ -14,13 +14,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void drawingOnClick(View view){
+    public void drawingOnClick(View view) {
         Intent drawingActivityIntent = new Intent(getApplicationContext(),DrawingActivity.class);
         startActivity(drawingActivityIntent);
     }
 
-    public void dbOnClick(View view){
+    public void dbOnClick(View view) {
         Intent dBActivityIntent = new Intent(getApplicationContext(),DBActivity.class);
         startActivity(dBActivityIntent);
+    }
+
+    public void serviceOnClick(View view){
+        Intent sActivityIntent = new Intent(getApplicationContext(),ServiceActivity.class);
+        startActivity(sActivityIntent);
     }
 }

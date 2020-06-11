@@ -24,8 +24,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(dBActivityIntent);
     }
 
-    public void serviceOnClick(View view){
+    public void serviceOnClick(View view) {
         Intent sActivityIntent = new Intent(getApplicationContext(),ServiceActivity.class);
         startActivity(sActivityIntent);
+    }
+
+    public void serverOnClick(View view) {
+        Intent serverActivityIntent = new Intent(getApplicationContext(),ServerActivity.class);
+        startActivity(serverActivityIntent);
     }
 }

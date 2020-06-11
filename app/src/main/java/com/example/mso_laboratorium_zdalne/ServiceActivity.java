@@ -17,7 +17,7 @@ public class ServiceActivity extends AppCompatActivity {
     private MultiplyService multiplyService;
     private boolean isBound = false;
 
-    private ServiceConnection mConnection = new ServiceConnection() {
+    private ServiceConnection myConnection = new ServiceConnection() {
 
         @Override
         public void onServiceConnected(ComponentName className, IBinder service) {
@@ -42,14 +42,14 @@ public class ServiceActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         Intent multiplyIntent = new Intent(this, MultiplyService.class);
-        bindService(multiplyIntent,mConnection,BIND_AUTO_CREATE);
+        bindService(multiplyIntent, myConnection,BIND_AUTO_CREATE);
     }
 
     @Override
     protected void onStop() {
         super.onStop();
         if (isBound) {
-            unbindService(mConnection);
+            unbindService(myConnection);
             isBound = false;
         }
     }

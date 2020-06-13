@@ -33,4 +33,9 @@ public class MainActivity extends AppCompatActivity {
         Intent serverActivityIntent = new Intent(getApplicationContext(),ServerActivity.class);
         startActivity(serverActivityIntent);
     }
+
+    public void ndkOnClick(View view) {
+        Intent ndkActivityIntent = new Intent(getApplicationContext(),NDKActivity.class);
+        startActivity(ndkActivityIntent);
+    }
 }
